@@ -24,9 +24,9 @@ function App() {
     <>
     <Navbar />
     <Hero />
-    <section className='card-list'>
+    <div className='card-list'>
     {cardsInfo}
-    </section>
+    </div>
     
     </>
     
