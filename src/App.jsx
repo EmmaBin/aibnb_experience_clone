@@ -17,6 +17,7 @@ function App() {
                   price={data.price}
                   id={data.id}
                   key={data.id}
+                  openSpots={data.openSpots}
     />
   })
  
