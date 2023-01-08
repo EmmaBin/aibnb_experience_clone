@@ -16,6 +16,7 @@ function App() {
                   title={data.title}
                   price={data.price}
                   id={data.id}
+                  key={data.id}
     />
   })
  
