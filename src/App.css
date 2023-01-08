@@ -53,3 +53,13 @@
 .card--star {
     height: 14px;
 }
+section{
+    padding: 20px;
+}
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card--price {
+    margin-top: auto;
+}

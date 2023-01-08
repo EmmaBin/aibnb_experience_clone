@@ -1,19 +1,19 @@
 import React from 'react'
-import image from '../assets/image_1.png'
 import star from '../assets/star.png'
 
-export default function Card(){
+
+export default function Card(props){
     return(
         <div className="card">
-            <img src={image} className='card--image' />
+            <img src={`public/images/${props.img}`} className='card--image' />
             <div className="card--stats">
                 <img src={star} className="card--star" />
-                <span>5.0</span>
-                <span className="gray">(6) • </span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.location}</span>
             </div>
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className="bold">From $136</span> / person</p>
+            <p className='card--title'>{props.title}</p>
+            <p className='card--price'><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
