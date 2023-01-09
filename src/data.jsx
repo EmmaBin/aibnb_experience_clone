@@ -12,6 +12,7 @@ export default [
         },
         location: "Online",
         openSpots: 0,
+        test: 'test'
     },
     {
         id: 2,
